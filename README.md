@@ -1,4 +1,4 @@
-# claw-self-improving-plus
+# Claw Self Improving Plus
 
 A conservative self-improvement workflow for OpenClaw agents.
 

@@ -3,7 +3,7 @@ name: claw-self-improving-plus
 description: Turn raw mistakes, corrections, discoveries, and repeated decisions into structured learnings and promotion candidates. Use when the user wants a conservative self-improvement workflow that captures lessons, scores reuse value, deduplicates similar learnings, drafts anchored candidate patches for SOUL.md, AGENTS.md, TOOLS.md, or MEMORY.md, reviews them through an approval step, and keeps human control before any long-term file edits.
 ---
 
-# claw-self-improving-plus
+# Claw Self Improving Plus
 
 Build a conservative learning pipeline. Optimize for signal, not clutter.
 
