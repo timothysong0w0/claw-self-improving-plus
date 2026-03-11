@@ -2,7 +2,7 @@
 
 ## v0.2.0 — Phase 3 foundation
 
-This release turns the `learning-promoter` engine inside `claw-self-improving-plus` from a conservative promotion pipeline into a stronger long-term learning workflow.
+This release turns `claw-self-improving-plus` into a stronger long-term learning workflow for OpenClaw-style agent workspaces.
 
 ### Added
 
@@ -22,7 +22,7 @@ This release turns the `learning-promoter` engine inside `claw-self-improving-pl
 - patch drafting now matches real workspace anchors more reliably
 - apply flow supports safer dry-run verification
 - consolidated learnings preserve combined evidence and related patterns
-- README now explains the workflow more clearly for first-time users
+- README now explains installation and packaging paths more clearly
 
 ### Why this matters
 
@@ -39,7 +39,7 @@ That keeps long-term memory cleaner while still letting the system compound usef
 
 ## v0.1.0 — Initial conservative pipeline
 
-Initial public foundation for the `learning-promoter` engine and the `claw-self-improving-plus` repository.
+Initial public foundation for `claw-self-improving-plus`.
 
 ### Added
 

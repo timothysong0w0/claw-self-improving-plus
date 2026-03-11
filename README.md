@@ -1,6 +1,6 @@
 # claw-self-improving-plus
 
-A conservative self-improvement workflow for OpenClaw agents, powered by the `learning-promoter` skill.
+A conservative self-improvement workflow for OpenClaw agents.
 
 ## Agent install instructions
 
@@ -10,21 +10,21 @@ If you are an OpenClaw agent reading this repository for installation or packagi
 - Use this directory as the installable skill:
 
 ```text
-skill/learning-promoter/
+skill/claw-self-improving-plus/
 ```
 
 - The root of the installable package must contain `SKILL.md`.
-- If publishing to ClawHub or packaging for installation, package **only** `skill/learning-promoter/`.
+- If publishing to ClawHub or packaging for installation, package **only** `skill/claw-self-improving-plus/`.
 - Do **not** include repository-level files such as `README.md`, `RELEASE_NOTES.md`, `examples/`, or `tests/` in the skill package.
 
 ## Project vs skill
 
 - `claw-self-improving-plus` = the full GitHub project
-- `learning-promoter` = the actual skill and core promotion engine
+- `skill/claw-self-improving-plus/` = the installable skill package
 
 ## What the skill does
 
-`learning-promoter` turns mistakes, corrections, discoveries, decisions, and regressions into structured learnings and controlled promotion candidates.
+`claw-self-improving-plus` turns mistakes, corrections, discoveries, decisions, and regressions into structured learnings and controlled promotion candidates.
 
 Core flow:
 
@@ -41,7 +41,7 @@ Core flow:
 ## Installable layout
 
 ```text
-skill/learning-promoter/
+skill/claw-self-improving-plus/
 ├── SKILL.md
 ├── scripts/
 └── references/
@@ -58,8 +58,8 @@ The default targets are:
 
 If your workspace uses different files, update the routing and anchor rules in:
 
-- `skill/learning-promoter/scripts/draft_patches.py`
-- `skill/learning-promoter/scripts/apply_approved_patches.py`
+- `skill/claw-self-improving-plus/scripts/draft_patches.py`
+- `skill/claw-self-improving-plus/scripts/apply_approved_patches.py`
 
 ## Minimal usage
 
@@ -68,7 +68,7 @@ From the repository root:
 ### Capture
 
 ```bash
-python3 skill/learning-promoter/scripts/capture_learning.py \
+python3 skill/claw-self-improving-plus/scripts/capture_learning.py \
   --store .learnings/inbox.jsonl \
   --type correction \
   --summary "User prefers concise replies" \
@@ -80,7 +80,7 @@ python3 skill/learning-promoter/scripts/capture_learning.py \
 ### Run the pipeline
 
 ```bash
-python3 skill/learning-promoter/scripts/run_pipeline.py \
+python3 skill/claw-self-improving-plus/scripts/run_pipeline.py \
   .learnings/inbox.jsonl \
   --work-dir .learnings \
   --base-dir /path/to/agent-workspace \
@@ -90,14 +90,14 @@ python3 skill/learning-promoter/scripts/run_pipeline.py \
 ### Review patch candidates
 
 ```bash
-python3 skill/learning-promoter/scripts/review_patches.py \
+python3 skill/claw-self-improving-plus/scripts/review_patches.py \
   .learnings/patches.json list
 ```
 
 ### Apply approved patches safely
 
 ```bash
-python3 skill/learning-promoter/scripts/apply_approved_patches.py \
+python3 skill/claw-self-improving-plus/scripts/apply_approved_patches.py \
   .learnings/patches.json \
   --base-dir /path/to/agent-workspace \
   --dry-run \
@@ -133,7 +133,7 @@ Recommended working directory:
 ├── examples/
 ├── tests/
 └── skill/
-   └── learning-promoter/
+   └── claw-self-improving-plus/
       ├── SKILL.md
       ├── scripts/
       └── references/
@@ -152,7 +152,7 @@ python3 tests/test_learning_promoter.py
 If your platform expects a skill package, package this directory only:
 
 ```text
-skill/learning-promoter/
+skill/claw-self-improving-plus/
 ```
 
 ## Release notes
