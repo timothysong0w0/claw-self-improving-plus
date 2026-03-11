@@ -2,7 +2,7 @@
 
 ## v0.2.0 — Phase 3 foundation
 
-This release turns `learning-promoter` from a conservative promotion pipeline into a stronger long-term learning workflow.
+This release turns the `learning-promoter` engine inside `claw-self-improving-plus` from a conservative promotion pipeline into a stronger long-term learning workflow.
 
 ### Added
 
@@ -39,7 +39,7 @@ That keeps long-term memory cleaner while still letting the system compound usef
 
 ## v0.1.0 — Initial conservative pipeline
 
-Initial public foundation for `learning-promoter`.
+Initial public foundation for the `learning-promoter` engine and the `claw-self-improving-plus` repository.
 
 ### Added
 

@@ -1,13 +1,16 @@
-# learning-promoter
+# claw-self-improving-plus
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Version](https://img.shields.io/badge/version-v0.2.0-blue.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![Tests](https://img.shields.io/badge/tests-local%20script-informational.svg)
 
-A conservative self-improvement skill for agents that turns messy lessons into reviewable, reusable knowledge.
+A conservative self-improvement workflow for OpenClaw agents, powered by the `learning-promoter` skill.
 
-`learning-promoter` captures mistakes, corrections, discoveries, decisions, and regressions, then turns them into structured learnings, deduplicated records, prioritized backlogs, and human-reviewed promotion patches.
+`claw-self-improving-plus` is the GitHub-facing project and repository.
+`learning-promoter` is the core skill and promotion engine inside it.
+
+The project captures mistakes, corrections, discoveries, decisions, and regressions, then turns them into structured learnings, deduplicated records, prioritized backlogs, and human-reviewed promotion patches.
 
 Instead of letting an agent rewrite its own long-term rules too early, this project takes the safer route:
 
@@ -20,6 +23,9 @@ Instead of letting an agent rewrite its own long-term rules too early, this proj
 That makes it useful for real workflows instead of turning memory into sludge.
 
 ## Why this project exists
+
+Many self-improving agent projects optimize for autonomy too early.
+This one is intentionally more conservative.
 
 Most self-improving agent ideas fail for one simple reason: they optimize for autonomy before they earn trust.
 
@@ -53,7 +59,8 @@ flowchart TD
 
 ## What it does
 
-`learning-promoter` can:
+At the center of this repository is the `learning-promoter` skill.
+It can:
 
 - capture structured learning records into JSONL
 - score records by reuse value, confidence, impact scope, and promotion worthiness
@@ -69,7 +76,7 @@ flowchart TD
 
 ## Who this is for
 
-This repository is a good fit if you want to build agents that:
+This repository is a good fit if you want to build OpenClaw or agent workflows that:
 
 - improve over time without becoming reckless
 - keep durable memory clean and intentional
