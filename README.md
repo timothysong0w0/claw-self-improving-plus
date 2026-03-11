@@ -94,6 +94,21 @@ It does **not** assume that an agent should rewrite its long-term behavior witho
 
 The bias is toward signal, not clutter.
 
+## Install the skill
+
+This repository is the full GitHub project.
+
+If you want to install the actual OpenClaw skill, use this directory:
+
+```text
+skill/learning-promoter/
+```
+
+That directory is the installable skill package.
+The repository root is **not** the skill package.
+
+If you are publishing to ClawHub, upload only the installable skill directory or a slim package built from it — not the whole repository.
+
 ## Repository layout
 
 ```text
@@ -127,7 +142,7 @@ If your setup uses a different workspace layout, update the routing and anchor r
 
 ## Quick start
 
-From the repository root:
+From the repository root of this GitHub project:
 
 ### 1. Capture learnings
 
@@ -349,7 +364,7 @@ This keeps the skill portable across different agent setups while still supporti
 
 ## Packaging
 
-If your agent platform supports packaged skills, package the directory:
+If your agent platform supports packaged skills, package this directory:
 
 ```text
 skill/learning-promoter/
