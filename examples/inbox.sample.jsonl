@@ -1,0 +1,3 @@
+{"type":"correction","summary":"User prefers English replies","details":"All responses should use English","evidence":"Explicitly stated by the user","source":"chat"}
+{"type":"regression","summary":"Re-check active identity before every send","details":"Session restarts can silently revert persona settings","evidence":"Observed during real usage","source":"agent-session"}
+{"type":"decision","summary":"Use a managed Python environment","details":"Do not install dependencies into the system interpreter","evidence":"Documented tool policy","source":"tools-policy"}

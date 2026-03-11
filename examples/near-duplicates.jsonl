@@ -1,0 +1,3 @@
+{"id":"dup-1","timestamp":"2026-03-11T06:00:00+00:00","source":"chat","type":"decision","summary":"Use uv instead of pip for Python installs","details":"Workspace Python policy requires uv for package management.","evidence":"TOOLS.md policy","status":"captured"}
+{"id":"dup-2","timestamp":"2026-03-11T06:01:00+00:00","source":"chat","type":"decision","summary":"Prefer uv over pip for Python dependency management","details":"The workspace standard is uv plus the shared .venv.","evidence":"TOOLS.md documents this rule","status":"captured"}
+{"id":"solo-1","timestamp":"2026-03-11T06:02:00+00:00","source":"chat","type":"discovery","summary":"User is traveling this morning","details":"Temporary status only.","evidence":"Current conversation context","status":"captured"}

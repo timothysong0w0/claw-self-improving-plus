@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Project runtime outputs
+.learnings/
+dist/
+build/
+tmp/
+*.log
+
+# Local test / scratch outputs
+out/
+reports/
+
+# Archives / packaged artifacts
+*.skill
+*.zip
+*.tar.gz
+
+# Secrets / local env
+.env
+.env.*
+
+# Keep source, examples, references, and tests tracked
+!examples/
+!tests/
+!skill/
